@@ -11,8 +11,11 @@ This directory is the central documentation portal for the decompilation project
 | [Version Coverage](VERSIONS.md) | Regions, languages, revisions, updates, builds, hashes, and support status |
 | [Public Source Index](research/PUBLIC_SOURCE_INDEX.md) | Living ROM-less source survey using the Japanese release as baseline and preserving regional/language differences |
 | [Exhaustive Source Coverage Tracker](research/SOURCE_COVERAGE_TRACKER.md) | Source-family-by-source-family completeness tracker so seed lists are never mistaken for a finished survey |
-| [Japanese Official Page Enumeration](research/JP_OFFICIAL_PAGE_ENUMERATION.md) | Page-by-page ledger for the 117-entry Japanese official Sword/Shield news corpus and related official pages |
+| [Japanese Official Page Enumeration](research/JP_OFFICIAL_PAGE_ENUMERATION.md) | Page-by-page Japanese official Sword/Shield news ledger; the live index declares 117 entries while 115 dated titles are currently directly observed, leaving a two-entry discrepancy under investigation |
+| [Japanese Official Off-Index Sources](research/JP_OFFICIAL_OFF_INDEX_SOURCES.md) | Japanese official Sword/Shield-relevant pages discovered outside the dedicated news-index workflow |
+| [Official Regional Site Map](research/OFFICIAL_REGIONAL_SITE_MAP.md) | Region-by-region official Sword/Shield publication surfaces for Japanese-baseline comparison |
 | [Region and Language Matrix](research/REGION_LANGUAGE_MATRIX.md) | Official regional/storefront/language evidence separated from unresolved binary identity |
+| [Public Reverse-Engineering Repository Catalog](research/PUBLIC_REPOSITORY_CATALOG.md) | Primary public technical repositories, archive state, research scope, and fork-handling rules |
 | [Public Technical File Map](research/TECHNICAL_FILE_MAP.md) | Pinned external reverse-engineering leads for Sword/Shield paths, schemas, save data, and Switch containers |
 | [Research Guide](RESEARCH_GUIDE.md) | Evidence, confidence, offsets, naming, and research-recording practices |
 | [Verification Guide](VERIFICATION.md) | Standards for Unverified, Observed, Reproduced, and Matched results |
@@ -26,26 +29,30 @@ This directory is the central documentation portal for the decompilation project
 
 As verified work becomes concrete, documentation may grow into areas such as `architecture/`, `formats/`, `research/`, `versions/`, and `verification/`. Create these directories when they contain real research material rather than as empty placeholders.
 
-`research/` now contains active public-source, Japanese-official-page, regional/language, technical file-map, and exhaustive source-coverage surveys because concrete research material is available. Additional subdirectories should still be created only when they contain real project material.
+`research/` now contains active public-source, Japanese-official-page, off-index official-source, regional/language, regional-site, public-repository, technical file-map, and exhaustive source-coverage surveys because concrete research material is available. Additional subdirectories should still be created only when they contain real project material.
 
 ## Recommended documentation flow
 
 1. Identify the target in `VERSIONS.md`.
 2. Consult `research/SOURCE_COVERAGE_TRACKER.md` first to determine which source families are still incomplete.
 3. Consult `research/PUBLIC_SOURCE_INDEX.md` for current public-source provenance and unresolved coverage gaps.
-4. Use `research/JP_OFFICIAL_PAGE_ENUMERATION.md` when working through the Japanese primary-source corpus; do not treat the news index alone as complete coverage.
-5. Use `research/REGION_LANGUAGE_MATRIX.md` when comparing official regional releases, storefronts, languages, ratings, and package-facing metadata.
-6. Use `research/TECHNICAL_FILE_MAP.md` for pinned public reverse-engineering leads, while preserving their external-evidence status until independently verified.
-7. Record investigation methods and evidence according to `RESEARCH_GUIDE.md`.
-8. Reconstruct source, data, or assets following `PROJECT_STANDARDS.md` and `REPOSITORY_STRUCTURE.md`.
-9. For asset work, follow `ASSET_WORKFLOW.md` and register material in `../manifests/`.
-10. Apply the validation levels defined in `VERIFICATION.md`.
-11. Update `PROJECT_STATUS.md` and `ROADMAP.md` when meaningful milestones are reached.
+4. Use `research/JP_OFFICIAL_PAGE_ENUMERATION.md` and `../manifests/jp-official-news-index.json` when working through the Japanese dedicated news corpus. Preserve the current **117 declared / 115 directly observed / 2 unresolved** count discrepancy until the missing records are actually located.
+5. Use `research/JP_OFFICIAL_OFF_INDEX_SOURCES.md` and `../manifests/jp-off-index-official-sources.json` for Japanese official material outside the dedicated Sword/Shield index.
+6. Use `research/OFFICIAL_REGIONAL_SITE_MAP.md` and `research/REGION_LANGUAGE_MATRIX.md` when comparing official regional releases, websites, storefronts, languages, ratings, promotions, and package-facing metadata.
+7. Use `research/PUBLIC_REPOSITORY_CATALOG.md`, `../manifests/public-repositories.json`, and `research/TECHNICAL_FILE_MAP.md` for public reverse-engineering leads, while preserving their external-evidence status until independently verified.
+8. Record investigation methods and evidence according to `RESEARCH_GUIDE.md`.
+9. Reconstruct source, data, or assets following `PROJECT_STANDARDS.md` and `REPOSITORY_STRUCTURE.md`.
+10. For asset work, follow `ASSET_WORKFLOW.md` and register material in `../manifests/`.
+11. Apply the validation levels defined in `VERIFICATION.md`.
+12. Update `PROJECT_STATUS.md` and `ROADMAP.md` when meaningful milestones are reached.
 
 ## Documentation rules
 
 - A representative sample is never sufficient for a source family marked for exhaustive survey.
 - Do not call a source family complete merely because its best-known sources were indexed; use the states in `research/SOURCE_COVERAGE_TRACKER.md`.
+- A declared count and an actually enumerated count are separate facts. Count discrepancies must remain explicit until resolved.
+- Discovery surfaces are not assumed complete: dedicated game sites, general Pokémon/Nintendo news, regional sites, support pages, videos, PDFs, retailer campaigns, archives, and public research repositories must be searched separately.
+- Forks and mirrors are not independent confirmations unless they contain materially distinct research or preserved history.
 - Distinguish confirmed findings from hypotheses.
 - Identify the exact target version or revision for version-specific claims.
 - Record offsets, paths, symbols, hashes, commands, and other stable evidence when practical.
