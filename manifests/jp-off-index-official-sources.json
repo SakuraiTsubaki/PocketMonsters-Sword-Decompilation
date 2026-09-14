@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "project": "PocketMonsters-Sword-Decompilation",
+  "region": "JP",
+  "surveyed_at": "2026-09-14",
+  "purpose": "Official Japanese Sword/Shield-relevant pages discovered outside the dedicated Sword/Shield news-index workflow.",
+  "status": "Enumerating",
+  "sources": [
+    {"id":"JP-OFFIDX-001","date":"2019-07-08","title":"ポケモンセンターで、『ポケモン ソード・シールド』の早期購入特典を手に入れよう！","url":"https://www.pokemon.co.jp/info/2019/07/190708_p01.html","scope":["preorder","pokemon_center","physical_bonus","art_book"]},
+    {"id":"JP-OFFIDX-002","date":"2019-07-12","title":"『ポケットモンスター ソード・シールド』店頭予約会の開催が決定！","url":"https://www.pokemon.co.jp/info/2019/07/190712_e01.html","scope":["preorder","retail_event","flyer"]},
+    {"id":"JP-OFFIDX-003","date":"2019-09-13","title":"Nintendo Switch購入で、『ポケモン ソード・シールド』のクリアファイルをプレゼント！","url":"https://www.pokemon.co.jp/info/2019/09/190913_gm01.html","scope":["retail_campaign","hardware_purchase_bonus"]},
+    {"id":"JP-OFFIDX-004","date":"2019-10-25","title":"「ポケモンセンターわくわくおたんじょうび」がリニューアル！","url":"https://www.pokemon.co.jp/info/2019/10/191025_p01.html","scope":["distribution","serial_code","birthday","pikachu","eevee"]},
+    {"id":"JP-OFFIDX-005","date":"2019-10-25","title":"全国のポケモンセンターで、「カレーの食材」と「きのみ」のセットをプレゼント！","url":"https://www.pokemon.co.jp/info/2019/10/191025_p02.html","scope":["distribution","pokemon_center","curry","berries"]},
+    {"id":"JP-OFFIDX-006","date":"2019-11-08","title":"阪急西宮ガーデンズで、『ポケットモンスター ソード・シールド』の発売記念イベントを開催！","url":"https://www.pokemon.co.jp/info/2019/11/191108_gm01.html","scope":["launch_event","demo","promotion"]},
+    {"id":"JP-OFFIDX-007","date":"2019-11-15","title":"ポケモン情報局で、『ポケモン ソード・シールド』発売記念キャンペーンを開催！","url":"https://www.pokemon.co.jp/info/2019/11/191115_cm01.html","scope":["launch_campaign","social_media"]},
+    {"id":"JP-OFFIDX-008","date":"2019-11-22","title":"『ポケットモンスター ソード・シールド』発売記念！ ポケモンといっしょに、写真を撮ろう！","url":"https://www.pokemon.co.jp/info/2019/11/191122_e01.html?i007=news","scope":["launch_event","retail_event"]},
+    {"id":"JP-OFFIDX-009","date":"2019-12-06","title":"全国のポケモンセンター・ポケモンストアでお買い物して、新アニメまるわかりブックをもらおう！","url":"https://www.pokemon.co.jp/info/2019/12/191206_p01.html","scope":["distribution","serial_code","pokeball_100"]},
+    {"id":"JP-OFFIDX-010","date":"2020-01-17","title":"ポケモン情報局で、『ポケモン ソード・シールド』お年玉キャンペーンを開催！","url":"https://www.pokemon.co.jp/info/2020/01/200117_cm01.html","scope":["distribution","serial_code","big_nugget_50"]},
+    {"id":"JP-OFFIDX-011","date":"2020-10-16","title":"「ポケモンセンターわくわくおたんじょうび」がリニューアル！","url":"https://www.pokemon.co.jp/info/2020/10/201016_p01.html","scope":["distribution","birthday","milcery"]},
+    {"id":"JP-OFFIDX-012","date":"2020-11-06","title":"ポケモン情報局で、『ポケモン ソード・シールド』ものひろいチャレンジキャンペーンを開催！","url":"https://www.pokemon.co.jp/info/2020/11/201106_cm01.html","scope":["distribution","serial_code","big_nugget_50"]},
+    {"id":"JP-OFFIDX-013","date":"2021-10-22","title":"「ポケモンセンターわくわくおたんじょうび」がリニューアル！","url":"https://www.pokemon.co.jp/info/2021/10/211022_p01.html","scope":["distribution","birthday","happiny","cross_title"]},
+    {"id":"JP-OFFIDX-014","date":"2021-10-29","title":"全国のポケモンセンターで、『ポケモン ソード・シールド』に「スイーツセット」をプレゼント！","url":"https://www.pokemon.co.jp/info/2021/10/211029_p01.html","scope":["distribution","items","sweets_set"]},
+    {"id":"JP-OFFIDX-015","date":"2022-07-08","title":"ポケモンセンターで「ピカピカアニメフェス」を開催！","url":"https://www.pokemon.co.jp/info/2022/07/220708_p01.html","scope":["battle_event","pokemon_center","anime_tie_in"]}
+  ],
+  "notes": [
+    "This is a minimum discovered set, not a completion claim.",
+    "Each record must be deduplicated against the dedicated Sword/Shield news index and then content-reviewed.",
+    "General pokemon.co.jp info archives, Pokemon Center notices, competitions, movie/anime tie-ins, PDFs and archived/removed pages remain to be exhaustively enumerated."
+  ]
+}
