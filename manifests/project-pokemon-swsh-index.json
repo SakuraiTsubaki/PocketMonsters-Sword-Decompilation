@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "project": "PocketMonsters-Sword-Decompilation",
+  "source_family": "Project Pokemon Generation VIII Event Gallery - Sword & Shield",
+  "category_url": "https://projectpokemon.org/home/files/category/225-sword-shield/",
+  "surveyed_at": "2026-09-14",
+  "declared_total_files": 215,
+  "pages": 9,
+  "enumerated_titles": 215,
+  "title_enumeration_status": "Indexed",
+  "content_review_status": "Enumerating",
+  "primary_source_crosscheck_status": "Not started at full-corpus level",
+  "verification": "Unverified / external community archive evidence",
+  "page_manifests": [
+    {"page":1,"entries":25,"path":"manifests/project-pokemon-swsh-page-01.json"},
+    {"page":2,"entries":25,"path":"manifests/project-pokemon-swsh-page-02.json"},
+    {"page":3,"entries":25,"path":"manifests/project-pokemon-swsh-page-03.json"},
+    {"page":4,"entries":25,"path":"manifests/project-pokemon-swsh-page-04.json"},
+    {"page":5,"entries":25,"path":"manifests/project-pokemon-swsh-page-05.json"},
+    {"page":6,"entries":25,"path":"manifests/project-pokemon-swsh-page-06.json"},
+    {"page":7,"entries":25,"path":"manifests/project-pokemon-swsh-page-07.json"},
+    {"page":8,"entries":25,"path":"manifests/project-pokemon-swsh-page-08.json"},
+    {"page":9,"entries":15,"path":"manifests/project-pokemon-swsh-page-09.json"}
+  ],
+  "sum_check": "25+25+25+25+25+25+25+25+15=215",
+  "data_classes_observed": [
+    "pokemon_distribution",
+    "item_distribution",
+    "clothing_distribution",
+    "dynamax_crystal_distribution",
+    "online_competition_reward",
+    "ranked_battle_reward",
+    "wild_area_event",
+    "wild_area_event_revision_chain",
+    "wild_area_base_state",
+    "competition_rules_data",
+    "home_linked_distribution",
+    "movie_anime_tie_in",
+    "local_wireless_distribution",
+    "retail_and_product_bonus"
+  ],
+  "high_priority_revision_or_error_cases": [
+    "Wild Area Event #20 July 2020 multiple redistributions including crash-causing reward data and later fixes",
+    "Wild Area Event #14 May 2020 Drilbur Hydro Pump error corrected within hours",
+    "Wild Area Event #64 Urshifu Challenge erroneous shiny Urshifu event revision followed by correction",
+    "Wild Area Event #51 partial file replacement retaining prior-index files",
+    "Japanese Birthday Pikachu/Eevee PID behavior revision beginning 2020-02-12 according to archive",
+    "Japanese Birthday Milcery Set Nickname Wonder Card revision beginning 2020-11-06 according to archive",
+    "WCS22 Sinistea Wonder Card gender-field programming error versus received genderless Pokémon",
+    "Ash Dracovish Wonder Card male programming error versus legitimate genderless received Pokémon",
+    "International shiny Zacian/Zamazenta Korean-code redemption behavior differs from other international code sources according to archive",
+    "Wild Area Event #00 near-null pre-News baseline despite internal file index observations"
+  ],
+  "next_required_passes": [
+    "Resolve the direct Project Pokemon file-entry URL and archive identifier for all 215 records.",
+    "Extract structured metadata for each record: submitted/updated dates, distribution dates, Wonder Card ID, delivery class, language slots, region, and technical revision notes.",
+    "Cross-check every traceable distribution/event against official Japanese and regional primary sources.",
+    "Enumerate Wild Area event package/index revisions rather than collapsing each named event into one state.",
+    "Enumerate unreleased/beta/superseded Generation VIII archive records separately and link them to released counterparts.",
+    "Build deduplicated event identities so one Wonder Card reused by multiple regional campaigns is not falsely counted as independent technical data."
+  ],
+  "completion_rule": "The 215-title census is complete at Indexed level only. This source family is not Reviewed until every entry has a resolved direct record and structured content review, and is not Cross-checked until traceable records are connected to primary official evidence or explicitly marked as lacking surviving primary provenance."
+}
