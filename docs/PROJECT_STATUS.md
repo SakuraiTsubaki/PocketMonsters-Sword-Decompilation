@@ -21,9 +21,9 @@ The project currently has **no locally owned retail game dump**. Work is proceed
 - **Regional official sites:** confirmed official publication surfaces are being mapped separately for United States, Canada EN/FR, UK/Ireland, France, Germany, Italy, Spain, Belgium FR/NL, Netherlands, Portugal, Russia, Australia/New Zealand, Latin America and other region-selector targets. A regional website is not assumed to imply a distinct retail binary.
 - **Japanese distributions:** Pokémon, item, clothing, Dynamax Crystal, movie, retailer, birthday and HOME-linked distributions are being split into individual records rather than treating “event Pokémon” as the whole distribution category.
 - **Pokémon HOME:** launch and Sword/Shield-relevant Japanese official version history is seeded through HOME Ver.2.0.0; current transfer/move rules are documented with an explicit warning not to project current behavior backwards without contemporary evidence.
-- **Competition / online services:** Battle Stadium, Internet/Live/Friendly competitions, tournament paths, competition-specific bugs and the 2022 final continuing online-service state are now separate research targets.
-- **Project Pokémon Generation VIII archive:** the current archive reports 243 Generation VIII records, including **215 Sword/Shield records**. All 215 require individual classification and primary-source cross-checking before this source family can be considered reviewed.
-- **Public reverse-engineering repositories:** primary/high-value repositories and major fork families are now catalogued so forks are not double-counted as independent evidence.
+- **Competition / online services:** Battle Stadium, Internet/Live/Friendly competitions, tournament paths, competition-specific bugs and the 2022 final continuing online-service state are separate research targets.
+- **Project Pokémon Generation VIII archive:** the current archive reports 243 Generation VIII records, including **215 Sword/Shield records**. **All 215 Sword/Shield titles across all nine category pages are now individually indexed** in `manifests/project-pokemon-swsh-page-01.json` through `page-09.json`, with aggregate coverage in `manifests/project-pokemon-swsh-index.json`. Direct record URLs, full metadata extraction, unreleased/beta coverage and primary-source cross-checking remain incomplete, so this family is `Indexed`, not `Reviewed`.
+- **Public reverse-engineering repositories:** primary/high-value repositories and major fork families are catalogued so forks are not double-counted as independent evidence.
 
 ## Technical research progress
 
@@ -77,6 +77,8 @@ The project currently has **no locally owned retail game dump**. Work is proceed
 - `manifests/regional-coverage.json`
 - `manifests/public-repositories.json`
 - `manifests/technical-source-snapshots.json`
+- `manifests/project-pokemon-swsh-index.json`
+- `manifests/project-pokemon-swsh-page-01.json` … `project-pokemon-swsh-page-09.json`
 
 ## Validation levels
 
@@ -92,11 +94,11 @@ Public web pages and upstream source repositories can themselves be directly obs
 
 1. Resolve the **117 declared / 115 observed** Japanese official news-index discrepancy without inventing the missing records.
 2. Continue enumerating Japanese official material outside the dedicated game site: distributions, competitions, HOME, Pokémon Center, movie/anime tie-ins, PDFs, retailer campaigns, videos and removed/archived pages.
-3. Enumerate all **215** Project Pokémon Sword/Shield Generation VIII archive records into a machine-readable classification/cross-check ledger.
+3. **Project Pokémon SWSH second pass:** resolve all 215 direct file-entry URLs/IDs, extract structured WC8/BCAT/Wild Area metadata, classify revision chains, and connect each traceable record to Japanese/regional primary evidence. The 215-title census itself is complete.
 4. Complete every official regional Sword/Shield site route and then compare each page against the Japanese baseline, including localization-specific terminology such as the official `Terms` pages.
 5. Recursively inventory the pinned `pkNX` Sword/Shield schemas/parsers into machine-readable manifests.
 6. Inventory PKHeX Sword/Shield save blocks, PK8 structures, legality/encounter logic and HOME remapping from pinned source revisions.
-7. Build complete Max Raid / Wild Area News / BCAT chronology from official notices plus public event-data archives.
+7. Build complete Max Raid / Wild Area News / BCAT chronology from official notices plus public event-data archives, preserving every known corrected/replaced package state.
 8. Enumerate every official Internet Competition, Ranked Battle season/rules series and participation reward through the final Sword/Shield online-service state.
 9. Catalogue physical package identifiers and game-card revisions from provenance-bearing public sources.
 10. Investigate public eShop/CDN metadata for Title ID/content-identity evidence without obtaining redistributed retail binaries.
