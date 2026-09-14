@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "project": "PocketMonsters-Sword-Decompilation",
+  "surveyed_at": "2026-09-14",
+  "baseline_region": "JP",
+  "binary_identity_status": "TBD",
+  "markets": [
+    {
+      "market": "JP",
+      "status": "official_source_captured",
+      "release_date": "2019-11-15",
+      "source": "https://www.pokemon.co.jp/ex/sword_shield/lineup/190605_01.html",
+      "supported_languages": ["ja", "en", "es", "fr", "de", "it", "ko", "zh-Hant", "zh-Hans"],
+      "rating": "CERO A",
+      "binary_identity": "baseline_unverified_hashes"
+    },
+    {
+      "market": "KR",
+      "status": "official_source_captured",
+      "release_date": "2019-11-15",
+      "source": "https://www.nintendo.com/kr/switch/sword_shield/",
+      "supported_languages": null,
+      "notes": "Nintendo Korea confirms release date, local price, Double Pack, and update-news chronology. Korean language support is independently listed by the Japanese baseline product page.",
+      "binary_identity": "TBD"
+    },
+    {
+      "market": "US",
+      "status": "official_source_captured",
+      "release_date": "2019-11-15",
+      "source": "https://www.nintendo.com/us/store/products/pokemon-sword-110262/",
+      "supported_languages": ["ja", "fr", "de", "it", "es", "ko", "zh-Hans", "zh-Hant", "en-US"],
+      "sku": "110262",
+      "upc": "00045496596583",
+      "rating_authority": "ESRB",
+      "binary_identity": "TBD"
+    },
+    {
+      "market": "CA-en",
+      "status": "official_source_captured",
+      "release_date": "2019-11-15",
+      "source": "https://www.nintendo.com/en-ca/store/products/pokemon-sword-switch/",
+      "supported_languages": ["ja", "fr", "de", "it", "es", "ko", "zh-Hans", "zh-Hant", "en-US"],
+      "binary_identity": "TBD"
+    },
+    {
+      "market": "CA-fr",
+      "status": "official_source_captured",
+      "release_date": "2019-11-15",
+      "source": "https://www.nintendo.com/fr-ca/store/products/pokemon-sword-switch/",
+      "supported_languages": ["ja", "fr", "de", "it", "es", "ko", "zh-Hans", "zh-Hant", "en-US"],
+      "binary_identity": "TBD"
+    },
+    {
+      "market": "GB",
+      "status": "official_source_captured",
+      "release_date": "2019-11-15",
+      "source": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Pokemon-Sword-1522111.html",
+      "supported_language_labels": ["Japanese", "English", "Spanish", "French", "German", "Italian", "Korean", "Chinese"],
+      "rating": "PEGI 7",
+      "download_size": "12.4 GB",
+      "binary_identity": "TBD"
+    },
+    {
+      "market": "ES",
+      "status": "official_source_captured",
+      "release_date": "2019-11-15",
+      "source": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch/Pokemon-Espada-1522111.html",
+      "supported_language_labels": ["Japanese", "English", "Spanish", "French", "German", "Italian", "Korean", "Chinese"],
+      "rating": "PEGI 7",
+      "binary_identity": "TBD"
+    },
+    {
+      "market": "NL",
+      "status": "official_source_captured",
+      "release_date": "2019-11-15",
+      "source": "https://www.nintendo.com/nl-nl/Games/Nintendo-Switch-games/Pokemon-Sword-1522111.html",
+      "supported_language_labels": ["Japanese", "English", "Spanish", "French", "German", "Italian", "Korean", "Chinese"],
+      "rating": "PEGI 7",
+      "download_size": "12.4 GB",
+      "binary_identity": "TBD"
+    },
+    {
+      "market": "BE-nl",
+      "status": "official_source_captured",
+      "release_date": "2019-11-15",
+      "source": "https://www.nintendo.com/nl-be/Games/Nintendo-Switch-games/Pokemon-Sword-1522111.html",
+      "supported_language_labels": ["Japanese", "English", "Spanish", "French", "German", "Italian", "Korean", "Chinese"],
+      "rating": "PEGI 7",
+      "binary_identity": "TBD"
+    },
+    {
+      "market": "PT",
+      "status": "official_source_captured",
+      "release_date": "2019-11-15",
+      "source": "https://www.nintendo.com/pt-pt/Jogos/Jogos-para-a-Nintendo-Switch/Pokemon-Sword-1522111.html",
+      "supported_language_labels": ["Japanese", "English", "Spanish", "French", "German", "Italian", "Korean", "Chinese"],
+      "rating": "PEGI 7",
+      "binary_identity": "TBD"
+    },
+    {
+      "market": "AU",
+      "status": "official_source_captured",
+      "release_date": "2019-11-15",
+      "source": "https://www.nintendo.com/au/games/nintendo-switch/pokemon-sword/",
+      "supported_languages": ["ja", "en", "fr", "de", "it", "es", "ko", "zh-Hans", "zh-Hant"],
+      "download_size": "12.4 GB",
+      "save_data_cloud": false,
+      "binary_identity": "TBD"
+    },
+    {
+      "market": "BR",
+      "status": "official_source_captured",
+      "release_date": "2019-11-15",
+      "source": "https://www.nintendo.com/pt-br/store/products/pokemon-sword-switch/",
+      "supported_languages": ["ja", "fr", "de", "it", "es", "ko", "zh-Hans", "zh-Hant", "en-US"],
+      "binary_identity": "TBD"
+    },
+    {
+      "market": "HK",
+      "status": "sale_presence_captured_details_pending",
+      "release_date": null,
+      "source": "https://store.nintendo.com.hk/download-code",
+      "supported_languages": null,
+      "notes": "Official Hong Kong store lists download codes for 寶可夢 劍 and 寶可夢 盾. Sword-specific product detail capture remains pending.",
+      "binary_identity": "TBD"
+    },
+    {
+      "market": "TW",
+      "status": "pending",
+      "release_date": null,
+      "source": null,
+      "supported_languages": null,
+      "binary_identity": "TBD"
+    },
+    {
+      "market": "NZ",
+      "status": "pending",
+      "release_date": null,
+      "source": null,
+      "supported_languages": null,
+      "binary_identity": "TBD"
+    },
+    {
+      "market": "MX_and_other_spanish_americas",
+      "status": "pending_country_by_country_survey",
+      "release_date": null,
+      "source": "https://www.nintendo.com/region-selector/",
+      "supported_languages": null,
+      "binary_identity": "TBD"
+    }
+  ]
+}
