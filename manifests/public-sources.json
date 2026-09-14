@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "project": "PocketMonsters-Sword-Decompilation",
+  "surveyed_at": "2026-09-14",
+  "baseline_policy": "Japanese official release material is the comparison baseline; regional and language differences are preserved independently.",
+  "dump_status": "No locally owned retail game dump available",
+  "sources": [
+    {
+      "id": "OFF-JP-LINEUP-001",
+      "kind": "official_product_page",
+      "region": "JP",
+      "language": "ja",
+      "url": "https://www.pokemon.co.jp/ex/sword_shield/lineup/190605_01.html",
+      "scope": ["release_metadata", "supported_languages", "distribution_form"],
+      "verification": "Observed",
+      "notes": "Primary Japanese official product metadata source. Observation applies to the public page, not to binary identity."
+    },
+    {
+      "id": "OFF-JP-UPD-110",
+      "kind": "official_update_notice",
+      "region": "JP",
+      "language": "ja",
+      "url": "https://www.pokemon.co.jp/info/2020/01/200109_at01.html",
+      "scope": ["update_1.1.0"],
+      "verification": "Observed"
+    },
+    {
+      "id": "OFF-JP-UPD-111",
+      "kind": "official_update_notice",
+      "region": "JP",
+      "language": "ja",
+      "url": "https://www.pokemon.co.jp/info/2020/03/200318_at01.html",
+      "scope": ["update_1.1.1", "update_1.1.0_recap"],
+      "verification": "Observed"
+    },
+    {
+      "id": "OFF-JP-UPD-120",
+      "kind": "official_update_notice",
+      "region": "JP",
+      "language": "ja",
+      "url": "https://www.pokemon.co.jp/info/2020/06/200617_at01.html",
+      "scope": ["update_1.2.0", "isle_of_armor"],
+      "verification": "Observed"
+    },
+    {
+      "id": "OFF-JP-UPD-121",
+      "kind": "official_update_notice",
+      "region": "JP",
+      "language": "ja",
+      "url": "https://www.pokemon.co.jp/info/2020/07/200708_at01.html",
+      "scope": ["update_1.2.1"],
+      "verification": "Observed"
+    },
+    {
+      "id": "OFF-JP-UPD-130",
+      "kind": "official_update_notice",
+      "region": "JP",
+      "language": "ja",
+      "url": "https://www.pokemon.co.jp/info/2020/10/201023_at01.html",
+      "scope": ["update_1.3.0", "crown_tundra"],
+      "verification": "Observed"
+    },
+    {
+      "id": "OFF-JP-UPD-131",
+      "kind": "official_update_notice",
+      "region": "JP",
+      "language": "ja",
+      "url": "https://www.pokemon.co.jp/info/2020/12/201222_at01.html",
+      "scope": ["update_1.3.1"],
+      "verification": "Observed"
+    },
+    {
+      "id": "OFF-JP-UPD-132",
+      "kind": "official_update_notice",
+      "region": "JP",
+      "language": "ja",
+      "url": "https://www.pokemon.co.jp/info/2021/05/210512_at01.html",
+      "scope": ["update_1.3.2"],
+      "verification": "Observed"
+    },
+    {
+      "id": "OFF-NA-UPDATES",
+      "kind": "official_update_history",
+      "region": "NA",
+      "language": "en-US",
+      "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/48550/p/989/c/120",
+      "scope": ["regional_update_dates", "regional_update_summaries"],
+      "verification": "Observed"
+    },
+    {
+      "id": "RE-PKNX",
+      "kind": "public_reverse_engineering_repository",
+      "region": "global",
+      "language": "en",
+      "url": "https://github.com/kwsch/pkNX",
+      "license": "GPL-3.0",
+      "scope": ["file_mapping", "data_formats", "messages", "encounters", "raids", "game_data"],
+      "verification": "Unverified",
+      "notes": "External reverse-engineering evidence. Do not promote target claims to Observed without independent confirmation."
+    },
+    {
+      "id": "RE-PKHEX",
+      "kind": "public_reverse_engineering_repository",
+      "region": "global",
+      "language": "en",
+      "url": "https://github.com/kwsch/PKHeX",
+      "license": "NOASSERTION",
+      "scope": ["save_format", "pk8", "legality", "encounter_data"],
+      "verification": "Unverified",
+      "notes": "External reverse-engineering evidence; repository license metadata is non-standard and must be reviewed before copying code."
+    },
+    {
+      "id": "RE-SWITCH-TOOLBOX",
+      "kind": "public_tool_documentation",
+      "region": "global",
+      "language": "en",
+      "url": "https://github.com/KillzXGaming/Switch-Toolbox/wiki/Pokemon-Let%27s-Go-%26-Sword-Shield-%3A-Model-Importing",
+      "scope": ["gfbmdl", "gfpak", "models", "asset_workflow"],
+      "verification": "Unverified"
+    },
+    {
+      "id": "RE-HACTOOL",
+      "kind": "platform_tool_repository",
+      "region": "global",
+      "language": "en",
+      "url": "https://github.com/SciresM/hactool",
+      "scope": ["nca", "exefs", "romfs", "nso0", "switch_container_formats"],
+      "verification": "Observed",
+      "notes": "Observed as a public platform tool; Sword-specific target layout remains unverified."
+    },
+    {
+      "id": "DB-PROJECTPOKEMON-EVENTS",
+      "kind": "community_archive",
+      "region": "global",
+      "language": "en",
+      "url": "https://projectpokemon.org/home/files/category/2-event-gallery/",
+      "scope": ["generation_8_events", "wonder_cards", "distribution_research"],
+      "verification": "Unverified",
+      "notes": "Use as a discovery/cross-check archive. Each event requires independent provenance review."
+    }
+  ]
+}
