@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "project": "PocketMonsters-Sword-Decompilation",
+  "region": "JP",
+  "surveyed_at": "2026-09-14",
+  "status": "Enumerating",
+  "records": [
+    {"id":"JP-COMP-001","name":"Galar Beginnings","period":"2019-12","kind":"official_internet_competition","source":"https://www.pokemon.co.jp/ex/sword_shield/news/191106_02.html","review":"seed_reviewed"},
+    {"id":"JP-COMP-002","name":"Galar Newcomers","period":"2020-01","kind":"official_internet_competition","source":"https://www.pokemon.co.jp/info/2020/01/200110_gm01.html","participation_reward":"50 BP","review":"seed_reviewed"},
+    {"id":"JP-COMP-003","name":"2020 International Challenge February","period":"2020-02","kind":"official_internet_competition","source":"https://www.pokemon.co.jp/info/2020/02/200221_at01.html","review":"bug_notice_reviewed_primary_event_pending","notes":"Official same-Nintendo-Account dual-version matching defect documented."},
+    {"id":"JP-COMP-004","name":"2020 International Challenge April","period":"2020-04","kind":"official_internet_competition","source":"https://www.pokemon.co.jp/info/2020/06/200612_at02.html","review":"secondary_official_reference_primary_event_pending"},
+    {"id":"JP-COMP-005","name":"2020 International Challenge May","period":"2020-05","kind":"official_internet_competition","source":"https://www.pokemon.co.jp/info/2020/04/200422_at01.html","review":"secondary_official_reference_primary_event_pending"},
+    {"id":"JP-COMP-006","name":"Pokemon Japan No.1 Deciding Battle 2020","period":"2020","kind":"national_online_competition","source":"https://www.pokemon.co.jp/info/2020/06/200612_at02.html","review":"seed_reviewed"},
+    {"id":"JP-COMP-007","name":"2022 International Challenge February","period":"2022-02","kind":"official_internet_competition","source":"https://www.pokemon.co.jp/info/2022/01/220114_e01.html","participation_reward":"Shiny Galarian Articuno","review":"umbrella_source_reviewed_individual_notice_pending"},
+    {"id":"JP-COMP-008","name":"2022 International Challenge March","period":"2022-03","kind":"official_internet_competition","source":"https://www.pokemon.co.jp/info/2022/01/220114_e01.html","participation_reward":"Shiny Galarian Zapdos","review":"umbrella_source_reviewed_individual_notice_pending"},
+    {"id":"JP-COMP-009","name":"2022 International Challenge April","period":"2022-04","kind":"official_internet_competition","source":"https://www.pokemon.co.jp/info/2022/01/220114_e01.html","participation_reward":"Shiny Galarian Moltres","review":"umbrella_source_reviewed_individual_notice_pending"},
+    {"id":"JP-COMP-010","name":"PJCS2022 Qualifier","period":"2022-05","kind":"official_internet_competition","source":"https://www.pokemon.co.jp/info/2022/01/220114_e01.html","review":"umbrella_source_reviewed_individual_notice_pending"},
+    {"id":"JP-COMP-011","name":"Sword Shield final online service update state","period":"2022-11 onward","kind":"service_lifecycle","source":"https://www.pokemon.co.jp/info/2022/10/221014_at02.html","review":"reviewed","facts":["ranked_no_further_updates_after_season36_series14","no_further_official_internet_competitions_planned","friendly_competitions_continue","ycomm_continue","online_camp_continue"]}
+  ],
+  "system_sources": [
+    {"id":"JP-COMP-SYS-001","name":"Battle Stadium","url":"https://www.pokemon.co.jp/ex/sword_shield/howtoplay/190816_01.html"},
+    {"id":"JP-COMP-SYS-002","name":"Internet Live LAN competition guide","url":"https://www.pokemon.co.jp/ex/sword_shield/howtoplay/191108_vs.html"}
+  ],
+  "related_bug_sources": [
+    {"id":"JP-BUG-COMP-001","url":"https://www.pokemon.co.jp/info/2020/02/200221_at01.html","summary":"Same Nintendo Account using both Sword and Shield could prevent matchmaking in the version whose Battle Team was locked first; temporary 45-total-match handling documented."}
+  ],
+  "pending":["all_2019_2022_internet_competitions","all_ranked_seasons_1_36","all_rules_series","individual_2022_challenge_notices","participation_gift_wc8_crosscheck","regional_competition_comparison","rules_pdfs","maintenance_corrections"]
+}
