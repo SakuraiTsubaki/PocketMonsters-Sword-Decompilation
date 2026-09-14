@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "project": "PocketMonsters-Sword-Decompilation",
+  "source_family": "Project Pokemon Generation VIII Event Gallery - Sword & Shield",
+  "source_page": "https://projectpokemon.org/home/files/category/225-sword-shield/page/9/",
+  "source_total_declared": 215,
+  "page": 9,
+  "page_count": 9,
+  "entries_on_page": 15,
+  "surveyed_at": "2026-09-14",
+  "verification": "Unverified / external community archive evidence",
+  "status": "Titles indexed; direct entry URL resolution and content cross-check pending",
+  "entries": [
+    {"page_index":1,"title":"Wild Area Event #5: Coalossal, Lapras, Flapple, Appletun","type_initial":"wild_area_event","entry_url":null,"url_resolution":"pending","notes":"Archive also reports Gigantamax Alcremie forms and version-specific raid/form availability."},
+    {"page_index":2,"title":"Wild Area Event #4: New Years 2020","type_initial":"wild_area_event","entry_url":null,"url_resolution":"pending","notes":"Archive reports guaranteed shiny Magikarp probability and shift back to Event #2 index 07 when event ended."},
+    {"page_index":3,"title":"Wild Area Event #3: Christmas 2019","type_initial":"wild_area_event","entry_url":null,"url_resolution":"pending","notes":"Archive reports temporary override of Event #2 and return to Event #2 index 05 afterward."},
+    {"page_index":4,"title":"Wild Area Event #2: Snorlax","type_initial":"wild_area_event_revision_chain","entry_url":null,"url_resolution":"pending","notes":"Archive reports interruptions by Christmas 2019 (indices 03/04) and New Years 2020 (index 06); reconstruct timeline/index chain."},
+    {"page_index":5,"title":"Wild Area Event #1: Butterfree, Drednaw & Corviknight","type_initial":"wild_area_event","entry_url":null,"url_resolution":"pending","notes":"Archive calls this first Wild Area event and also includes Sandaconda/Centiskorch. Archive text says Nov 15 to Dec 4, 2020; year appears suspect for launch-era chronology and must be cross-checked rather than silently corrected."},
+    {"page_index":6,"title":"Wild Area Event #00","type_initial":"wild_area_base_state","entry_url":null,"url_resolution":"pending","notes":"Archive identifies near-null base files before any Mystery Gift/Wild Area News collection, despite file index 01; high-value baseline state."},
+    {"page_index":7,"title":"★And390 - Stonjourner","type_initial":"dynamax_crystal_distribution","entry_url":null,"url_resolution":"pending","notes":"WC ID 0120; archive states encounter data programmed for both games but crystal redeemable only in Shield; requires at least Wild Area Event #12 state."},
+    {"page_index":8,"title":"★And603 - Eiscue","type_initial":"dynamax_crystal_distribution","entry_url":null,"url_resolution":"pending","notes":"WC ID 0120; archive states crystal redeemable only in Sword; requires at least Wild Area Event #12 state."},
+    {"page_index":9,"title":"New Anime Book: 100x Poké Balls","type_initial":"item_distribution_serial","region_initial":"JP","entry_url":null,"url_resolution":"pending","notes":"WC ID 0106; serial included with New Anime Pocket Monsters Total Understanding Book according to archive."},
+    {"page_index":10,"title":"★And458 - Jangmo-o","type_initial":"dynamax_crystal_distribution_product_bonus","entry_url":null,"url_resolution":"pending","notes":"WC ID 1603; Sword/Shield dual-pack code-card bonus."},
+    {"page_index":11,"title":"★And15 - Larvitar","type_initial":"dynamax_crystal_distribution_product_bonus","entry_url":null,"url_resolution":"pending","notes":"WC ID 1604; Sword/Shield dual-pack code-card bonus."},
+    {"page_index":12,"title":"Pokémon Center Curry Ingredients and Berry","type_initial":"item_distribution_local_random_pool","region_initial":"JP","entry_url":null,"url_resolution":"pending","notes":"Archive reports six Wonder Card variants, daily Pokémon Center visit eligibility and weighted random ingredient/berry sets including 5% Gigantamix card."},
+    {"page_index":13,"title":"Bottle Cap Gift","type_initial":"item_distribution_password","entry_url":null,"url_resolution":"pending","notes":"Archive groups at least GALAR and C0MPET1T10N password windows under WC ID 1612; multiple redemptions allowed across different distribution instances according to card metadata."},
+    {"page_index":14,"title":"Ranked Battles S1 - Singles & Doubles Rewards","type_initial":"ranked_battle_reward","entry_url":null,"url_resolution":"pending","notes":"Singles/Doubles cards differ but reward contents match by tier according to archive; preserve separate cards if IDs/data differ."},
+    {"page_index":15,"title":"Download Rules","type_initial":"competition_rules_data_archive","entry_url":null,"url_resolution":"pending","notes":"Archive page collecting downloadable rules; this is technical competition data rather than a normal Mystery Gift distribution."}
+  ],
+  "crosscheck_priorities": [
+    "Reconstruct Wild Area #00-#5 index transitions chronologically, preserving temporary override and return states.",
+    "Verify Event #1 year against official 2019 launch Wild Area announcement; preserve archive typo/claim as provenance if incorrect.",
+    "Cross-check Stonjourner/Eiscue version-specific Dynamax Crystal redemption against Japanese official guide campaign.",
+    "Treat ranked rewards and Download Rules as separate data classes from Mystery Gifts.",
+    "Resolve all direct Project Pokemon file-entry URLs and IDs."
+  ]
+}
