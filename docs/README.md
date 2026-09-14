@@ -11,6 +11,7 @@ This directory is the central documentation portal for the decompilation project
 | [Version Coverage](VERSIONS.md) | Regions, languages, revisions, updates, builds, hashes, and support status |
 | [Public Source Index](research/PUBLIC_SOURCE_INDEX.md) | Living ROM-less source survey using the Japanese release as baseline and preserving regional/language differences |
 | [Exhaustive Source Coverage Tracker](research/SOURCE_COVERAGE_TRACKER.md) | Source-family-by-source-family completeness tracker so seed lists are never mistaken for a finished survey |
+| [Japanese Official Page Enumeration](research/JP_OFFICIAL_PAGE_ENUMERATION.md) | Page-by-page ledger for the 117-entry Japanese official Sword/Shield news corpus and related official pages |
 | [Region and Language Matrix](research/REGION_LANGUAGE_MATRIX.md) | Official regional/storefront/language evidence separated from unresolved binary identity |
 | [Public Technical File Map](research/TECHNICAL_FILE_MAP.md) | Pinned external reverse-engineering leads for Sword/Shield paths, schemas, save data, and Switch containers |
 | [Research Guide](RESEARCH_GUIDE.md) | Evidence, confidence, offsets, naming, and research-recording practices |
@@ -25,20 +26,21 @@ This directory is the central documentation portal for the decompilation project
 
 As verified work becomes concrete, documentation may grow into areas such as `architecture/`, `formats/`, `research/`, `versions/`, and `verification/`. Create these directories when they contain real research material rather than as empty placeholders.
 
-`research/` now contains active public-source, regional/language, technical file-map, and exhaustive source-coverage surveys because concrete research material is available. Additional subdirectories should still be created only when they contain real project material.
+`research/` now contains active public-source, Japanese-official-page, regional/language, technical file-map, and exhaustive source-coverage surveys because concrete research material is available. Additional subdirectories should still be created only when they contain real project material.
 
 ## Recommended documentation flow
 
 1. Identify the target in `VERSIONS.md`.
 2. Consult `research/SOURCE_COVERAGE_TRACKER.md` first to determine which source families are still incomplete.
 3. Consult `research/PUBLIC_SOURCE_INDEX.md` for current public-source provenance and unresolved coverage gaps.
-4. Use `research/REGION_LANGUAGE_MATRIX.md` when comparing official regional releases, storefronts, languages, ratings, and package-facing metadata.
-5. Use `research/TECHNICAL_FILE_MAP.md` for pinned public reverse-engineering leads, while preserving their external-evidence status until independently verified.
-6. Record investigation methods and evidence according to `RESEARCH_GUIDE.md`.
-7. Reconstruct source, data, or assets following `PROJECT_STANDARDS.md` and `REPOSITORY_STRUCTURE.md`.
-8. For asset work, follow `ASSET_WORKFLOW.md` and register material in `../manifests/`.
-9. Apply the validation levels defined in `VERIFICATION.md`.
-10. Update `PROJECT_STATUS.md` and `ROADMAP.md` when meaningful milestones are reached.
+4. Use `research/JP_OFFICIAL_PAGE_ENUMERATION.md` when working through the Japanese primary-source corpus; do not treat the news index alone as complete coverage.
+5. Use `research/REGION_LANGUAGE_MATRIX.md` when comparing official regional releases, storefronts, languages, ratings, and package-facing metadata.
+6. Use `research/TECHNICAL_FILE_MAP.md` for pinned public reverse-engineering leads, while preserving their external-evidence status until independently verified.
+7. Record investigation methods and evidence according to `RESEARCH_GUIDE.md`.
+8. Reconstruct source, data, or assets following `PROJECT_STANDARDS.md` and `REPOSITORY_STRUCTURE.md`.
+9. For asset work, follow `ASSET_WORKFLOW.md` and register material in `../manifests/`.
+10. Apply the validation levels defined in `VERIFICATION.md`.
+11. Update `PROJECT_STATUS.md` and `ROADMAP.md` when meaningful milestones are reached.
 
 ## Documentation rules
 
