@@ -11,7 +11,28 @@ The Event Gallery currently reports:
 - Brilliant Diamond & Shining Pearl: **14**
 - Legends: Arceus: **14**
 
-These counts are discovery anchors and can change as the archive is maintained. They must therefore be recorded with a survey date rather than treated as immutable game facts.
+These counts are discovery anchors and can change as the archive is maintained. They are recorded with a survey date rather than treated as immutable game facts.
+
+## Sword/Shield title census — 215 / 215 indexed
+
+The Sword/Shield category spans nine pages. Every currently listed title has now been enumerated into repository manifests:
+
+| Page | Entries | Manifest |
+| --- | ---: | --- |
+| 1 | 25 | `manifests/project-pokemon-swsh-page-01.json` |
+| 2 | 25 | `manifests/project-pokemon-swsh-page-02.json` |
+| 3 | 25 | `manifests/project-pokemon-swsh-page-03.json` |
+| 4 | 25 | `manifests/project-pokemon-swsh-page-04.json` |
+| 5 | 25 | `manifests/project-pokemon-swsh-page-05.json` |
+| 6 | 25 | `manifests/project-pokemon-swsh-page-06.json` |
+| 7 | 25 | `manifests/project-pokemon-swsh-page-07.json` |
+| 8 | 25 | `manifests/project-pokemon-swsh-page-08.json` |
+| 9 | 15 | `manifests/project-pokemon-swsh-page-09.json` |
+| **Total** | **215** | `manifests/project-pokemon-swsh-index.json` |
+
+The arithmetic check is `25 × 8 + 15 = 215`.
+
+This completes the **title-level census only**. It does not mean that all 215 records have been content-reviewed or connected to primary sources.
 
 ## Generation VIII format notes recorded by the archive
 
@@ -25,21 +46,44 @@ The Generation VIII category states that:
 
 These are **external technical claims** in this repository and remain subject to independent cross-checking.
 
-## Sword/Shield archive scope
+## Data classes found in the 215-record census
 
-The Sword/Shield subcategory currently contains **215 files**. The archive mixes multiple materially different research classes that must be split during enumeration:
+The archive is not simply a list of 215 event Pokémon. The title census contains at least:
 
-- Pokémon Mystery Gifts;
-- serial-code distributions;
-- local Pokémon Center distributions;
-- item/clothing gifts;
-- Wild Area News / raid-event data;
-- event revisions or replacements;
-- regional variants;
-- language-dependent metadata;
-- files whose public archive entry documents a distribution that official pages no longer describe in technical detail.
+- Pokémon distributions;
+- item distributions;
+- clothing distributions;
+- Dynamax Crystal distributions;
+- competition participation rewards;
+- Ranked Battle rewards;
+- Wild Area News / Max Raid event packages;
+- Wild Area base-state data;
+- Wild Area event revision chains;
+- downloadable competition-rule data;
+- HOME-linked distributions;
+- movie/anime tie-ins;
+- local-wireless events;
+- retailer/product bonuses;
+- regional variants and region-dependent redemption behavior.
 
-The 215 count must therefore **not** be equated to 215 unique Pokémon distributions.
+The 215 count must therefore **not** be equated to 215 unique Pokémon distributions or 215 independent technical event identities.
+
+## High-priority revision / error evidence identified during the census
+
+The title/category review already surfaced several cases that require dedicated historical preservation rather than normalization:
+
+- **Wild Area Event #20: July 2020** — archive documents multiple redistributed indices, including a crash-causing reward item, incomplete fixes, server/online issues and a later proper fix. A missing intermediate index is explicitly noted by the archive.
+- **Wild Area Event #14: May 2020** — archive reports a Shield 1-star Drilbur with Hydro Pump, corrected roughly nine hours later.
+- **Wild Area Event #64: Urshifu Challenge** — archive reports an erroneous shiny Urshifu event state followed by a correction.
+- **Wild Area Event #51: Summer Ghost Event 2021** — archive notes partial file replacement while some files retained prior-index data.
+- **Japanese Birthday Pikachu / Eevee** — archive records a PID behavior change beginning 2020-02-12.
+- **Japanese Birthday Milcery** — archive records a Set Nickname Wonder Card revision beginning 2020-11-06.
+- **WCS22 Sinistea** — archive records a Wonder Card gender-field programming error, while the legitimately received Pokémon is correctly genderless.
+- **Ash's Dracovish** — archive records a male gender field error in the Wonder Card, while the legitimately received Pokémon is genderless.
+- **International shiny Zacian / Zamazenta** — archive reports that Korean-issued serial codes could be redeemed on either Sword or Shield, while other international code sources were server-restricted to the opposite-version gift even though the underlying Wonder Card allowed both games.
+- **Wild Area Event #00** — archive describes a near-null pre-Wild-Area-News baseline state despite the underlying file-index observations.
+
+All of these remain external archive evidence until primary or independently reproducible corroboration is attached.
 
 ## Example cross-check: Japanese Birthday Pikachu
 
@@ -60,15 +104,17 @@ This example shows why the exhaustive survey must cover both the ordinary Genera
 
 ## Wild Area event evidence
 
-The archive also preserves individual Wild Area event packages and technical observations. These records can expose event-pool indices, encounter rates, abilities, catch rates, IV settings, moves, shield parameters and other data not present in official news prose.
+The archive preserves individual Wild Area event packages and technical observations. These records can expose event-pool indices, encounter rates, abilities, catch rates, IV settings, moves, shield parameters, partial updates and correction chains that do not appear in official news prose.
+
+Wild Area events must therefore be modeled as **versioned event-data states**, not merely as one row per public event name.
 
 Such fields are high-value reverse-engineering leads but remain **external evidence** until corroborated.
 
-## Required enumeration work
+## Required second-pass work for all 215 records
 
-For all **215 Sword/Shield archive records**, capture at least:
+For every record, still capture and verify:
 
-- Project Pokémon file-entry ID and URL;
+- direct Project Pokémon file-entry URL and file-entry identifier;
 - archive title;
 - event class;
 - submitted/published/updated dates;
@@ -77,18 +123,22 @@ For all **215 Sword/Shield archive records**, capture at least:
 - WC8/BCAT/Wild Area data class;
 - Wonder Card ID where provided;
 - language slots and language-dependent differences;
-- Pokémon/item/raid contents;
+- Pokémon/item/clothing/raid/rules contents;
 - revision/replacement history;
-- link to the corresponding official source when found;
-- whether the archive record is released, unreleased, beta, superseded or uncertain;
-- verification/cross-check status.
+- link to corresponding official Japanese and regional sources when found;
+- released, unreleased, beta, superseded, corrected or uncertain state;
+- verification/cross-check status;
+- deduplicated technical identity where one Wonder Card or event-data package was reused by multiple campaigns/regions.
 
 ## Completion rule
 
-Project Pokémon is not `Reviewed` until all 215 Sword/Shield entries have individual records and have been classified. It is not `Cross-checked` until each record with a traceable official campaign has been connected to that primary evidence or explicitly marked as lacking a surviving primary source.
+- **Indexed:** all 215 current Sword/Shield category titles have individual manifest records. **This milestone is complete.**
+- **Reviewed:** every one of the 215 entries has a resolved direct archive record and structured content review. **Not complete.**
+- **Cross-checked:** each traceable record is connected to surviving primary official evidence, or explicitly marked as lacking surviving primary provenance. **Not complete.**
+- **Exhausted:** ordinary gallery, unreleased/beta/superseded records, technical discussion threads, BCAT/Wild Area event revisions and archive history have all been searched and reconciled. **Not complete.**
 
-**Status: Enumerating — not complete.**
+**Status: Indexed — 215 / 215 title census complete; detailed review continues.**
 
-Sources surveyed: Project Pokémon Event Gallery, Generation VIII category, Sword & Shield category, and selected event/unreleased entries.
+Sources surveyed: Project Pokémon Event Gallery, Generation VIII category, all nine Sword & Shield category pages, and selected event/unreleased entries.
 
 _Last updated: 2026-09-14._
