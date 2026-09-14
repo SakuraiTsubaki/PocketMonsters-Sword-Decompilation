@@ -1,9 +1,10 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "project": "PocketMonsters-Sword-Decompilation",
   "surveyed_at": "2026-09-14",
   "baseline_policy": "Japanese official release material is the comparison baseline; regional and language differences are preserved independently.",
   "dump_status": "No locally owned retail game dump available",
+  "completeness_policy": "A source family is not complete merely because representative sources are indexed. See manifests/source-coverage.json and docs/research/SOURCE_COVERAGE_TRACKER.md.",
   "sources": [
     {
       "id": "OFF-JP-LINEUP-001",
@@ -14,6 +15,16 @@
       "scope": ["release_metadata", "supported_languages", "distribution_form"],
       "verification": "Observed",
       "notes": "Primary Japanese official product metadata source. Observation applies to the public page, not to binary identity."
+    },
+    {
+      "id": "OFF-JP-NEWS-INDEX",
+      "kind": "official_news_index",
+      "region": "JP",
+      "language": "ja",
+      "url": "https://www.pokemon.co.jp/ex/sword_shield/news/?category=information",
+      "scope": ["official_news", "campaigns", "updates", "max_raid_events", "distributions", "promotions", "videos"],
+      "verification": "Observed",
+      "notes": "Index currently exposes 117 entries: 70 game-information and 47 campaign entries. Each entry must be individually indexed and reviewed."
     },
     {
       "id": "OFF-JP-UPD-110",
@@ -83,7 +94,7 @@
       "kind": "official_update_history",
       "region": "NA",
       "language": "en-US",
-      "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/48550/p/989/c/120",
+      "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/48550/p/897",
       "scope": ["regional_update_dates", "regional_update_summaries"],
       "verification": "Observed"
     },
@@ -94,9 +105,18 @@
       "language": "en",
       "url": "https://github.com/kwsch/pkNX",
       "license": "GPL-3.0",
-      "scope": ["file_mapping", "data_formats", "messages", "encounters", "raids", "game_data"],
+      "scope": ["file_mapping", "flatbuffers", "data_formats", "messages", "encounters", "raids", "trainers", "placement", "shops", "game_data"],
       "verification": "Unverified",
       "notes": "External reverse-engineering evidence. Do not promote target claims to Observed without independent confirmation."
+    },
+    {
+      "id": "RE-PKNX-MAPPING",
+      "kind": "public_source_file",
+      "region": "global",
+      "language": "en",
+      "url": "https://github.com/kwsch/pkNX/blob/master/pkNX.Game/File/GameFileMapping.cs",
+      "scope": ["romfs_paths", "localized_messages", "pml", "encounters", "raids", "battle_tower", "placement", "shops"],
+      "verification": "Unverified"
     },
     {
       "id": "RE-PKHEX",
@@ -105,9 +125,18 @@
       "language": "en",
       "url": "https://github.com/kwsch/PKHeX",
       "license": "NOASSERTION",
-      "scope": ["save_format", "pk8", "legality", "encounter_data"],
+      "scope": ["save_format", "save_blocks", "pk8", "legality", "encounter_data", "home_remapping"],
       "verification": "Unverified",
       "notes": "External reverse-engineering evidence; repository license metadata is non-standard and must be reviewed before copying code."
+    },
+    {
+      "id": "RE-PKHEX-SAV8",
+      "kind": "public_source_file",
+      "region": "global",
+      "language": "en",
+      "url": "https://github.com/kwsch/PKHeX/blob/master/PKHeX.Core/Saves/SAV8SWSH.cs",
+      "scope": ["swsh_save_object", "save_revision", "save_blocks"],
+      "verification": "Unverified"
     },
     {
       "id": "RE-SWITCH-TOOLBOX",
@@ -115,7 +144,7 @@
       "region": "global",
       "language": "en",
       "url": "https://github.com/KillzXGaming/Switch-Toolbox/wiki/Pokemon-Let%27s-Go-%26-Sword-Shield-%3A-Model-Importing",
-      "scope": ["gfbmdl", "gfpak", "models", "asset_workflow"],
+      "scope": ["gfbmdl", "gfpak", "models", "maps", "npc_models", "asset_workflow"],
       "verification": "Unverified"
     },
     {
@@ -129,6 +158,97 @@
       "notes": "Observed as a public platform tool; Sword-specific target layout remains unverified."
     },
     {
+      "id": "RE-CAPTURESIGHT",
+      "kind": "public_runtime_research_tool",
+      "region": "global",
+      "language": "en",
+      "url": "https://github.com/zaksabeast/CaptureSight",
+      "scope": ["wild_pokemon_runtime", "raid_runtime", "trade_runtime", "den_data", "rng_state", "trainer_ids"],
+      "verification": "Unverified"
+    },
+    {
+      "id": "RE-RAIDFINDER",
+      "kind": "public_rng_tool",
+      "region": "global",
+      "language": "en",
+      "url": "https://github.com/Admiral-Fish/RaidFinder",
+      "scope": ["max_raid_rng", "raid_seed", "raid_generation"],
+      "verification": "Unverified"
+    },
+    {
+      "id": "RE-PKHEX-RAID-PLUGIN",
+      "kind": "public_rng_save_tool",
+      "region": "global",
+      "language": "en",
+      "url": "https://github.com/Leanny/PKHeX_Raid_Plugin",
+      "scope": ["den_save_data", "raid_seed", "raid_rng"],
+      "verification": "Unverified"
+    },
+    {
+      "id": "RE-SYSBOT-SEEDCHECK",
+      "kind": "public_automation_research",
+      "region": "global",
+      "language": "en",
+      "url": "https://github.com/kwsch/SysBot.NET/wiki/Seed-Check",
+      "scope": ["swsh_seed_check", "trade_observation", "raid_rng"],
+      "verification": "Unverified"
+    },
+    {
+      "id": "RE-SWSH-MODS-EXL",
+      "kind": "public_runtime_hook_repository",
+      "region": "global",
+      "language": "en",
+      "url": "https://github.com/lincoln-lm/swsh-mods-exl",
+      "scope": ["swsh_1.3.2", "exefs_hooks", "encounter_runtime", "message_paths", "overworld_shiny", "randomizer", "camera", "battle_runtime"],
+      "verification": "Unverified"
+    },
+    {
+      "id": "RE-KM-EDITOR",
+      "kind": "public_modding_tool_repository",
+      "region": "global",
+      "language": "en",
+      "url": "https://github.com/KotMatrosk1n/KM-Editor",
+      "scope": ["pokemon", "moves", "items", "trainers", "text", "behavior", "wild_encounters", "static_encounters", "gifts", "trades", "raids", "shops", "rewards", "placement", "exefs"],
+      "verification": "Unverified"
+    },
+    {
+      "id": "RE-MODEL-IMPORTER",
+      "kind": "public_asset_tool_repository",
+      "region": "global",
+      "language": "en",
+      "url": "https://github.com/ChicoEevee/Pokemon-Switch-Model-Importer-Blender",
+      "scope": ["pokemon_models", "gfbmdl", "gfbanm", "blender_import_export"],
+      "verification": "Unverified"
+    },
+    {
+      "id": "RE-GFBANM-BLENDER",
+      "kind": "public_animation_format_tool",
+      "region": "global",
+      "language": "en",
+      "url": "https://github.com/Shararamosh/io_scene_gfbanm",
+      "scope": ["gfbanm", "animation_import", "animation_export", "flatbuffers"],
+      "verification": "Unverified"
+    },
+    {
+      "id": "RE-LUSAMINE-RESEARCH",
+      "kind": "public_research_notes",
+      "region": "global",
+      "language": "en",
+      "url": "https://gist.github.com/Lusamine",
+      "scope": ["swsh_overworld_rng", "runtime_addresses", "research_catalog"],
+      "verification": "Unverified",
+      "notes": "Individual gists must be separately indexed and pinned; addresses are version/game specific."
+    },
+    {
+      "id": "RE-RAIDTOMI",
+      "kind": "public_rng_tool_repository",
+      "region": "global",
+      "language": "en",
+      "url": "https://github.com/sliminality/raidtomi",
+      "scope": ["max_raid_rng", "raid_generation", "personal_data"],
+      "verification": "Unverified"
+    },
+    {
       "id": "DB-PROJECTPOKEMON-EVENTS",
       "kind": "community_archive",
       "region": "global",
@@ -137,6 +257,25 @@
       "scope": ["generation_8_events", "wonder_cards", "distribution_research"],
       "verification": "Unverified",
       "notes": "Use as a discovery/cross-check archive. Each event requires independent provenance review."
+    },
+    {
+      "id": "DB-BULBAPEDIA-SWSH",
+      "kind": "community_encyclopedia",
+      "region": "global",
+      "language": "en",
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Sword_and_Shield",
+      "scope": ["version_history", "gameplay", "staff", "music", "references"],
+      "verification": "Unverified",
+      "notes": "Secondary source; trace technical and historical claims to upstream sources where practical."
+    },
+    {
+      "id": "DB-BULBAPEDIA-GEN8-GLITCHES",
+      "kind": "community_glitch_catalog",
+      "region": "global",
+      "language": "en",
+      "url": "https://bulbapedia.bulbagarden.net/wiki/List_of_glitches_in_Generation_VIII",
+      "scope": ["swsh_glitches", "version_specific_bugs", "cross_game_gen8_glitches"],
+      "verification": "Unverified"
     }
   ]
 }
