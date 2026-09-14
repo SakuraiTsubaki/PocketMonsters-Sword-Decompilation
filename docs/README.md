@@ -10,6 +10,8 @@ This directory is the central documentation portal for the decompilation project
 | [Roadmap](ROADMAP.md) | Recommended project phases from target definition through reproducible reconstruction |
 | [Version Coverage](VERSIONS.md) | Regions, languages, revisions, updates, builds, hashes, and support status |
 | [Public Source Index](research/PUBLIC_SOURCE_INDEX.md) | Living ROM-less source survey using the Japanese release as baseline and preserving regional/language differences |
+| [Region and Language Matrix](research/REGION_LANGUAGE_MATRIX.md) | Official regional/storefront/language evidence separated from unresolved binary identity |
+| [Public Technical File Map](research/TECHNICAL_FILE_MAP.md) | Pinned external reverse-engineering leads for Sword/Shield paths, schemas, save data, and Switch containers |
 | [Research Guide](RESEARCH_GUIDE.md) | Evidence, confidence, offsets, naming, and research-recording practices |
 | [Verification Guide](VERIFICATION.md) | Standards for Unverified, Observed, Reproduced, and Matched results |
 | [Repository Structure](REPOSITORY_STRUCTURE.md) | Intended long-term layout for source, data, assets, tools, tests, and manifests |
@@ -22,17 +24,19 @@ This directory is the central documentation portal for the decompilation project
 
 As verified work becomes concrete, documentation may grow into areas such as `architecture/`, `formats/`, `research/`, `versions/`, and `verification/`. Create these directories when they contain real research material rather than as empty placeholders.
 
-`research/` now contains the active public-source survey because concrete research material is available. Additional subdirectories should still be created only when they contain real project material.
+`research/` now contains active public-source, regional/language, and technical file-map surveys because concrete research material is available. Additional subdirectories should still be created only when they contain real project material.
 
 ## Recommended documentation flow
 
 1. Identify the target in `VERSIONS.md`.
 2. Consult `research/PUBLIC_SOURCE_INDEX.md` for current public-source provenance and unresolved coverage gaps.
-3. Record investigation methods and evidence according to `RESEARCH_GUIDE.md`.
-4. Reconstruct source, data, or assets following `PROJECT_STANDARDS.md` and `REPOSITORY_STRUCTURE.md`.
-5. For asset work, follow `ASSET_WORKFLOW.md` and register material in `../manifests/`.
-6. Apply the validation levels defined in `VERIFICATION.md`.
-7. Update `PROJECT_STATUS.md` and `ROADMAP.md` when meaningful milestones are reached.
+3. Use `research/REGION_LANGUAGE_MATRIX.md` when comparing official regional releases, storefronts, languages, ratings, and package-facing metadata.
+4. Use `research/TECHNICAL_FILE_MAP.md` for pinned public reverse-engineering leads, while preserving their external-evidence status until independently verified.
+5. Record investigation methods and evidence according to `RESEARCH_GUIDE.md`.
+6. Reconstruct source, data, or assets following `PROJECT_STANDARDS.md` and `REPOSITORY_STRUCTURE.md`.
+7. For asset work, follow `ASSET_WORKFLOW.md` and register material in `../manifests/`.
+8. Apply the validation levels defined in `VERIFICATION.md`.
+9. Update `PROJECT_STATUS.md` and `ROADMAP.md` when meaningful milestones are reached.
 
 ## Documentation rules
 
