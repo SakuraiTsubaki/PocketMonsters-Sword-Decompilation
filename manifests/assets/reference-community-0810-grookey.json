@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "asset_class": "community_reference",
+  "retail_original": false,
+  "rom_extracted": false,
+  "pokemon": {
+    "national_dex": 810,
+    "en": "Grookey",
+    "ja": "サルノリ",
+    "ko": "흥나숭"
+  },
+  "file": "Idle-Anim.png",
+  "upstream": {
+    "repository": "PMDCollab/SpriteCollab",
+    "ref": "master",
+    "path": "sprite/0810/Idle-Anim.png",
+    "git_blob_sha": "abe8d6ce1f7fc30743655eb2d1b00e4ebe48c117",
+    "credits_path": "sprite/0810/credits.txt",
+    "contributor": "bwappi",
+    "license": "CC BY-NC 4.0"
+  },
+  "applicability": ["Pokemon Sword", "Pokemon Shield"],
+  "verification": "upstream file and credit record observed",
+  "notes": "Community reference only; not evidence of a retail Sword/Shield sprite asset."
+}
